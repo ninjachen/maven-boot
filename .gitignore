@@ -1,0 +1,10 @@
+#java byte file 
+*.class
+
+#maven
+target/
+
+#eclipse file
+.settings/
+.project
+.classpath

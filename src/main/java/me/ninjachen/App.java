@@ -10,30 +10,32 @@ package me.ninjachen;
     {
         System.out.println( "Hello World!" );
     }
-}
-*/
-import org.springframework.boot.*;
-import org.springframework.boot.autoconfigure.*;
-import org.springframework.stereotype.*;
-import org.springframework.web.bind.annotation.*;
+}*/
+import org.springframework.boot.SpringApplication;
 
-@Controller
-@EnableAutoConfiguration
+
+// import org.springframework.boot.*;
+// import org.springframework.boot.autoconfigure.*;
+// import org.springframework.stereotype.*;
+// import org.springframework.web.bind.annotation.*;
+
+// @Controller
+// @EnableAutoConfiguration
 public class App {
 
-    @RequestMapping("/")
-    @ResponseBody
-    String home() {
-        return "Hello World!";
-    }
+    // @RequestMapping("/")
+    // @ResponseBody
+    // String home() {
+    //     return "Hello World!";
+    // }
 
-    @RequestMapping("/ninjachen")
-    @ResponseBody
-    String ninjachen() {
-        return "Ninjachen comes !";
-    }
+    // @RequestMapping("/ninjachen")
+    // @ResponseBody
+    // String ninjachen() {
+    //     return "Ninjachen comes !";
+    // }
 
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(App.class, args);
+        SpringApplication.run(ScheduledTasks.class);
     }
 }
