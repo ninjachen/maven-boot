@@ -8,3 +8,11 @@ target/
 .settings/
 .project
 .classpath
+
+# idea
+.idea/
+*.ipr
+*.iws
+*.iml
+out/
+
