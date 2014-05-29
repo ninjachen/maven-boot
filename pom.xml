@@ -6,29 +6,32 @@
   <packaging>jar</packaging>
   <name>maven-boot</name>
   <url>http://maven.apache.org</url>
-  
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <start-class>me.ninjachen.App</start-class>
   </properties>
-  
+
   <parent>
     <!-- sring boot start-->
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>1.0.2.RELEASE</version>
   </parent>
-  
+
   <dependencies>
-   <!--  <dependency>
+
+      <!-- RESTController-->
+   <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
-    </dependency> -->
- 
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter</artifactId>
-    </dependency>
+      </dependency>
+
+      <!-- ScheduledTask-->
+      <!--<dependency>-->
+      <!--<groupId>org.springframework.boot</groupId>-->
+      <!--<artifactId>spring-boot-starter</artifactId>-->
+    <!--</dependency>-->
     <!-- sring boot end-->
     <!-- <dependency>
       <groupId>junit</groupId>
@@ -37,10 +40,10 @@
       <scope>test</scope>
     </dependency> -->
   </dependencies>
-  
+
   <build>
     <plugins>
-      <!-- <plugin>
+      <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
         <version>1.2.1</version>
@@ -58,11 +61,11 @@
             <argument>bar</argument>
           </arguments>
         </configuration>
-      </plugin> -->
+      </plugin>
 
-      <plugin> 
-                <artifactId>maven-compiler-plugin</artifactId> 
-                <version>2.3.2</version> 
+      <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
             </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
