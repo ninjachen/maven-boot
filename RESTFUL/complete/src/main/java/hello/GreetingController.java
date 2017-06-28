@@ -18,7 +18,7 @@ public class GreetingController {
     }
 
     @RequestMapping("/online_test")
-	public Greeting greeting() {
+	public String greeting() {
         return "welcome";
     }
 }
