@@ -5,6 +5,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 @RestController
 public class GreetingController {
 
@@ -19,6 +25,14 @@ public class GreetingController {
 
     @RequestMapping("/online_test")
 	public String greeting() {
-        return "welcome";
+		File file = new ClassPathResource("stations.json").getFile();
+        String content;
+        try {
+            content = new Scanner(file).useDelimiter("\\Z").next();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            content = "empty file";
+        }
+        return content
     }
 }
