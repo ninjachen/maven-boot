@@ -33,6 +33,6 @@ public class GreetingController {
             e.printStackTrace();
             content = "empty file";
         }
-        return content
+        return content;
     }
 }
