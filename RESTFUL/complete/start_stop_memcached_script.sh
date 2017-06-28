@@ -1,9 +1,11 @@
 #!/bin/bash
 # source from https://gist.github.com/tinogomes/447191
-BASE=/tmp
-PID=$BASE/app.pid
-LOG=$BASE/app.log
-ERROR=$BASE/app-error.log
+# BASE=/tmp
+LOG_DIR=/home/ninja/ninjacrocks/maven-boot/RESTFUL/complete/log
+
+PID=$LOG_DIR/app.pid
+LOG=$LOG_DIR/app.log
+ERROR=$LOG_DIR/app-error.log
 
 PORT=8090
 LISTEN_IP='0.0.0.0'
