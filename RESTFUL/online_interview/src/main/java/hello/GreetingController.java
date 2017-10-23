@@ -24,4 +24,17 @@ public class GreetingController {
         return new Greeting(counter.incrementAndGet(),
                             String.format(template, name));
     }
+
+    @RequestMapping("/online_test")
+	public String greeting() {
+        String content;
+        try {
+		File file = new ClassPathResource("stations.json").getFile();
+            content = new Scanner(file).useDelimiter("\\Z").next();
+        } catch (Exception e) {
+            e.printStackTrace();
+            content = "empty file";
+        }
+        return content;
+    }
 }
