@@ -14,10 +14,10 @@ import java.util.Scanner;
 import java.lang.Exception;
 
 @RestController
-public class OnlineInterviewController {
+public class GreetingController {
 
-    @RequestMapping("/online_interview")
-	public String onlineInterview() {
+    @RequestMapping("/online_test")
+	public String greeting() {
         String content;
         try {
 		File file = new ClassPathResource("stations_unioned.json").getFile();

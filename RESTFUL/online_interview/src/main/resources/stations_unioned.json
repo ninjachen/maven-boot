@@ -70,6 +70,34 @@
 		"id": 310000000273,
 		"next_stop": "斜土路鲁班路",
 		"curr_stop": "成都北路威海路"
+	}, {
+		"bus_type": "公交浦西",
+		"direction": 14,
+		"name": "253路",
+		"start_time": "05:30",
+		"departure": "临汾路曲沃路(彭浦新村)",
+		"terminal": "鲁班路中山南一路",
+		"end_time": "18:15",
+		"stop_id": 21564202731,
+		"station_index": 10,
+		"real_time": "lineId=025306",
+		"id": 310000000273,
+		"next_stop": "斜土路鲁班路",
+		"curr_stop": "成都北路威海路"
+	}, {
+		"bus_type": "公交浦西",
+		"direction": 14,
+		"name": "253路",
+		"start_time": "05:30",
+		"departure": "临汾路曲沃路(彭浦新村)",
+		"terminal": "鲁班路中山南一路",
+		"end_time": "18:15",
+		"stop_id": 21564202731,
+		"station_index": 10,
+		"real_time": "lineId=025306",
+		"id": 310000000273,
+		"next_stop": "斜土路鲁班路",
+		"curr_stop": "成都北路威海路"
 	}],
 	"36路": [{
 		"bus_type": "公交浦西",
